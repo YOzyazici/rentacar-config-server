@@ -8,13 +8,13 @@ eureka:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
     preferIpAddress: true
 server:
-  port: 9001
+  port: 0
 spring:
   application:
     name: invertory-service
   datasource:
     url: jdbc:postgresql://localhost:5432/rentacarinventorydb
-    username: postgrey
+    username: postgres
     password: 12345
   jpa:
     hibernate:
